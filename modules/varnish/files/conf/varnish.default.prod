@@ -1,0 +1,6 @@
+DAEMON_OPTS="-a :80 \
+             -T 0.0.0.0:80 \
+             -b 127.0.0.1:8080 \
+             -u varnish -g varnish \
+             -S /etc/varnish/secret \
+             -s file,/var/lib/varnish/$INSTANCE/varnish_storage.bin,1G"

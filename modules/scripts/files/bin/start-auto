@@ -1,0 +1,3 @@
+#!/bin/bash
+
+as-update-auto-scaling-group web_group --min-size 2 --max-size 10
